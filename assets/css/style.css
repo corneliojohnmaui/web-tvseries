@@ -1,0 +1,141 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", sans-serif;
+}
+
+/*HEADER*/
+/* Style the links inside the pill navigation menu */
+.pill-nav{
+  text-align: center;
+}
+.pill-nav a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+
+}
+
+/* Change the color of links on mouse-over */
+.pill-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.pill-nav a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/*SLIDESHOW*/
+
+img {
+  max-width: 100%;
+}
+
+.slider-container{
+  height: 50%;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+  overflow: hidden; 
+  text-align: center;
+}
+
+.menu {
+  position: absolute;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  bottom: 0;
+}
+
+.menu label {
+  cursor: pointer;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50px;
+  margin: 0 .2em 1em;
+  &:hover {
+    background: red;
+  }
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  padding: 8em 1em 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: left 0s .75s;
+}
+
+[id^="slide"]:checked + .slide {
+  left: 0;
+  z-index: 100;
+  transition: left .65s ease-out;
+}
+
+.slide-1 {
+  background-image: url("../images/twd.jpg");
+}
+.slide-2 {
+  background-image: url("../images/got.jpg");
+}
+.slide-3 {
+  background-image: url("../images/vikings.jpg");
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 80%;
+  right: 0;
+  background-color: #000;
+  opacity: 0.6;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .2s ease;
+}
+
+#fslider:hover .overlay {
+  width: 40%;
+  left: 60%;
+}
+#selider:hover .overlay {
+  width: 40%;
+  left: 60%;
+}
+#trlider:hover .overlay {
+  width: 40%;
+  left: 60%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
