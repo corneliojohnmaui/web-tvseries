@@ -30,7 +30,7 @@ html, body {
 
 /* Add a color to the active/current link */
 .pill-nav a.active {
-  background-color: dodgerblue;
+  background-color: #ff5722d9;
   color: white;
 }
 
@@ -42,7 +42,7 @@ img {
 
 .slider-container{
   height: 50%;
-  width: 70%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -57,6 +57,7 @@ img {
   z-index: 900;
   width: 100%;
   bottom: 0;
+  margin-bottom: -2%;
 }
 
 .menu label {
@@ -82,7 +83,7 @@ img {
   padding: 8em 1em 0;
   background-size: cover;
   background-position: 50% 50%;
-  transition: left 0s .75s;
+   transition: left 0s .75s;
 }
 
 [id^="slide"]:checked + .slide {
@@ -105,28 +106,32 @@ img {
 .overlay {
   position: absolute;
   bottom: 0;
-  left: 80%;
-  right: 0;
-  background-color: #000;
-  opacity: 0.6;
+ /* left: 20%;*/
+  right: 0%;
+  background: rgba(0,0,0,0.7);
+  /*opacity: 0;*/
   overflow: hidden;
   width: 0;
   height: 100%;
-  transition: .2s ease;
+  transition: .5s ease;
 }
 
 #fslider:hover .overlay {
+  right: 0%;
   width: 40%;
-  left: 60%;
+  
+ 
 }
 #selider:hover .overlay {
+  right: 0%;
   width: 40%;
-  left: 60%;
+  
 }
 #trlider:hover .overlay {
+   right: 0%;
   width: 40%;
-  left: 60%;
-}
+  
+}      
 
 .text {
   white-space: nowrap; 
@@ -134,8 +139,177 @@ img {
   font-size: 20px;
   position: absolute;
   overflow: hidden;
-  top: 10%;
-  left: 50%;
+  top: 15%;
+  left: 42%;
+  z-index: 1;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+.title-slide{
+  
+  color: #ff5722;
+  text-decoration: none;
+  
+}
+
+*.content{
+  
+  background-color: #d6c9c9;
+
+  width: 80%;
+  height: 10%;
+  margin-right: auto;
+  margin-left: auto;
+  }
+
+.homenav:hover .content{
+  background-color: blue;
+}
+
+.sub-nav {
+    width: 100%;
+    height: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    margin-bottom: 0px;
+
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+
+    
+
+
+}
+
+.sub-nav a {
+  display: inline-block;
+  color: black; 
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 17px;
+  /*border-radius: 5px;*/
+}
+
+.series-cat{
+  border-bottom: solid 2px;
+}
+
+.sub-nav a.active{
+  border-bottom: solid 4px;
+  border-color:  #ff5722d9;
+
+}
+/**.line-animate{
+
+  position: absolute;
+  width: 10%;
+  height: 4px;
+  background-color: red;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  animation: mymove 2s linear;
+  animation:  slideInLeft 1s infinite, slideInRight 1s infinite;
+}*/
+
+
+/*@-webkit-keyframes mymove {
+  from {left: 100px;}
+  to {left: 510px;}
+}
+
+@keyframes mymove {
+  from {left: 120px;}
+  to {left: 510px;}
+}*/
+
+
+/*FLEX CONTAINER */
+*.main-content{
+
+  background-color: #ffffff;
+
+  width: 80%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  padding-top: 5px;
+
+}
+
+.flex-container {
+
+  display: flex;
+  flex-wrap: wrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 140px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+ /* END of FLEX CONTAINER*/
+
+ div.polaroid {
+ 
+  width: 17%;
+  height: 70%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px 10px;
+   display: inline-block;
+  position: relative;
+
+
+}
+div.polaroid:hover{
+    box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+div.container {
+  text-align: center;
+  padding: 0px 10px;
+}
+
+
+
+
+.overlay4series {
+    position: absolute;
+    bottom: 0;
+   /* left: 20%;*/
+    right: 0%;
+    background: rgba(0,0,0,0.7);
+    /*opacity: 0;*/
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+.playBtn {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 15%;
+  left: 42%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.allseriesImg:hover {
+    opacity: 0.5;
 }
