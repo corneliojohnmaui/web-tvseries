@@ -4,17 +4,18 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-		<!-- HEADER -->
+		<!-- NAVIGATION -->
 		<div class="pill-nav">
 		  <a class="active" href="#home">Home</a>
-		  <a href="#news">News</a>
-		  <a href="#contact">Contact</a>
-		  <a href="#about">About</a>
-		</div>
+<!-- 		  <a href="#news">News</a> -->
+		  <a href="contact.html">Contact</a>
+		  <a href="about.html">About</a>
+		</div><br>
 
-
+		<!-- HEADER -->
 		<!-- SLIDESHOW -->
 		<div class="slider-container">
 			<div class="menu">
@@ -26,21 +27,21 @@
 		  	<input id="slide-dot-1" type="radio" name="slides" checked>
 		    <div class="slide slide-1" id="fslider">
 		    	<div class="overlay">
-		    		<div class="text"><a href="" class="title-slide">The Walking Dead</a><div style="color: white;"><br>Season 2<br><button>WATCH</button></div></div>
+		    		<div class="text"><a href="" class="title-slide">The Walking Dead</a><div style=""> <br><button>WATCH NOW</button><br></div></div>
 			 	</div>
 			</div>
 		  
 		  	<input id="slide-dot-2" type="radio" name="slides">
 		    <div class="slide slide-2" id="selider">
 				<div class="overlay">
-		    		<div class="text">GAME OF THRONES</div>
+		    		<div class="text"><a href="" class="title-slide">Game of Thrones</a><div style=""> <br><button>WATCH NOW</button><br></div></div>
 			 	</div>
 		    </div>
 		  
 		  	<input id="slide-dot-3" type="radio" name="slides">
 		    <div class="slide slide-3" id="trlider">
 		    	<div class="overlay">
-		    		<div class="text">VIKINGS</div>
+		    		<div class="text"><a href="" class="title-slide">Vikings</a><div style=""> <br><button>WATCH NOW</button><br></div></div>
 			 	</div>	
 
 		    </div>
@@ -48,68 +49,153 @@
 
 		<div class="content">
 			<div class="sub-nav">
-				 <a href="#as" class="active">Latest Series</a>
-		 		 <a href="#ss" class="">All Series</a>
+				 <a href="index.html" class="active">Latest Series</a>
+		 		 <a href="allSeries.html" class="">All Series</a>
 			</div>
 			<span class="line-animate"></span>
 			<span class="line-animate2"></span>
 		</div>
 
 		<div class="main-content">
-<!-- 			<div class="flex-container">
-			  <div>1</div>
-			  <div>2</div>
-			  <div>3</div>  
-			  <div>4</div>
-			  <div>5</div>
-			  <div>6</div>  
-			  <div>7</div>
-			  <div>8</div>
-			  <div>9</div>  
-			  <div>10</div>
-			  <div>11</div>
-			  <div>12</div>  
-			</div> -->
-			<div class="polaroid">
-			  <img src="assets/images/twd.jpg" class="allseriesImg" alt="5 Terre" style="width:100%">
-			  <div class="overlay4series">
-			  		<div class="playBtn"> yesss</div>
-			  </div>
-			  <div class="container">
-			  <p>Cinque Terre <br> dasdawadadasda</p>
-			  </div>
+			<label></label>
+			<div class="container">
+				<input type="radio" name="images" id="i1" checked/>
+				<input type="radio" name="images" id="i2">
+				<input type="radio" name="images" id="i3">
+				<input type="radio" name="images" id="i4">
+				<input type="radio" name="images" id="i5">
+				<input type="radio" name="images" id="i6">
+
+					<div class="slide-img" id="one">
+					
+						<a href=""><img src="assets/images/tgdoc.jpg" id="fimg"></a>
+						<a href=""><img src="assets/images/twd.jpg" id=""></a>
+						<a href=""><img src="assets/images/arrow.jpg" id=""></a>
+						<a href=""><img src="assets/images/tFlash.jpg" id=""></a> 
+						
+										
+						<label for="i1" class="pre">
+						<i class="fa fa-chevron-left arL" id="arL"></i>
+						</label>
+						<label for="i2" class="nex"><i class="fa fa-chevron-right arR" id="arL"></i></label>
+						
+					</div>
+					<div class="slide-img" id="two">
+						<img src="assets/images/twd.jpg" id="fimg" >
+						<img src="assets/images/arrow.jpg">
+						<img src="assets/images/tFlash.jpg">
+						<img src="assets/images/titans.jpg">
+						<img src="assets/images/got.jpg" id="limg">
+						
+						<label for="i1" class="pre"><i class="fa fa-chevron-left arL" ></i> </label>
+						<label for="i3" class="nex"><i class="fa fa-chevron-right arR" id="arL"></i></label>
+					</div>
+					<div class="slide-img" id="three">
+						<img src="assets/images/arrow.jpg" id="fimg">
+						<img src="assets/images/tFlash.jpg">
+						<img src="assets/images/titans.jpg">
+						<img src="assets/images/got.jpg">
+						<img src="assets/images/vikings.jpg" id="limg">
+						
+						<label for="i2" class="pre"><i class="fa fa-chevron-left arL" ></i></label>
+						<label for="i4" class="nex"><i class="fa fa-chevron-right arR" id="arL"></i></label>
+					</div>
+					<div class="slide-img" id="four">
+						<img src="assets/images/tFlash.jpg" id="fimg">
+						<img src="assets/images/titans.jpg">
+						<img src="assets/images/got.jpg">
+						<img src="assets/images/vikings.jpg">
+						<img src="assets/images/narcos.jpg" id="limg">
+				
+						<label for="i3" class="pre"><i class="fa fa-chevron-left arL" ></i></label>
+						<label for="i6" class="nex"><i class="fa fa-chevron-right arR" id="arL"></i></label>
+					</div>
+
+		<!-- 			<div class="nav">
+						<label class="dots" id="dot1" for="i1"></label>
+						<label class="dots" id="dot2" for="i2"></label>
+						<label class="dots" id="dot3" for="i3"></label>
+						<label class="dots" id="dot4" for="i4"></label>
+					</div> -->
+		
 			</div>
-			<div class="polaroid">
-			  <img src="assets/images/twd.jpg" alt="5 Terre" style="width:100%">
-			  <div class="container">
-			  <p>Cinque Terre <br> dasdawadadasda</p>
-			  </div>
+
+
+
+
+		</div>
+		<div class="series-search">
+			<h1><center>Popular Searches</center></h1>
+			<hr>
+			<div class="divSeries">
+				<div class="imgDivS">
+				  <img src="assets/images/got.jpg" class="searchImg" alt="5 Terre">
+				 <div class="search-info"><h3><a href="">	
+				When is Game of Thrones coming back?
+				</a></h3><br>Get ready for the epic fantasy series’ final six-episode season, coming in April 2019. <a href=""><h5 class="fom">FIND OUT MORE &nbsp<i class="fa fa-chevron-right"></i></h5></a>
+				</div>
+			
+				</div>
+
+				<div class="imgDivS">
+				  <img src="assets/images/prettyLL.jpeg" class="searchImg" alt="5 Terre">
+				<div class="search-info"><h3><a href="">	
+				What’s the latest on Big Little Lies Season 2?
+				</a></h3><br>If you can’t wait to get back to Monterey, you’re in good company. Here’s the most up-to-date information. <a href=""><h5 class="fom">FIND OUT MORE &nbsp<i class="fa fa-chevron-right"></i></h5></a>
+				</div>
+				</div>
+				<br><br>
+				<div class="imgDivS">
+				  <img src="assets/images/deadwud.jpeg" class="searchImg" alt="5 Terre">
+				<div class="search-info"><h3><a href="">	
+				Is a Deadwood movie happening?
+				</a></h3><br>Yes! Here's the most up-to-date information about the film and which cast members will be returning to the camp.<a href=""><h5 class="fom">FIND OUT MORE &nbsp<i class="fa fa-chevron-right"></i></h5></a>
+				</div>
+				</div>	
+
+				<div class="imgDivS">
+				  <img src="assets/images/watchmen.jpeg" class="searchImg" alt="5 Terre">
+				<div class="search-info"><h3><a href="">	
+				Who is in the Watchmen cast?
+				</a></h3><br>Regina King, Jeremy Irons and Don Johnson are just some of the actors joining Damon Lindelof's new show. <a href=""><h5 class="fom"> FIND OUT MORE &nbsp<i class="fa fa-chevron-right"></i></h5></a>
+				</div>
+				</div>	
 			</div>
-			<div class="polaroid">
-			  <img src="assets/images/twd.jpg" alt="5 Terre" style="width:100%">
-			  <div class="container">
-			  <p>Cinque Terre <br> dasdawadadasda</p>
+		</div>
+		<div class="comingsoon">
+			<h1><center>Coming Soon</center></h1>
+			<hr>
+			<div class="cs-polaroid">
+			  <img src="assets/images/trueD.jpeg" class="cs-allseriesImg" alt="5 Terre" >
+			<h6>RETURNS JANUARY 13 AT 9 PM</h6>
+			  <div class="cs-container-info">
+			  <p class="cs-info"><h3>True Detective</h3>Mahershala Ali stars as the lead detective investigating a macabre crime in the heart of the Ozarks.</p>
+			  <a href=""><h5 class="cs-fom"> FIND OUT MORE &nbsp<i class="fa fa-chevron-right"></i></h5></a>
 			  </div>
-			</div>
-			<div class="polaroid">
-			  <img src="assets/images/twd.jpg" alt="5 Terre" style="width:100%">
-			  <div class="container">
-			  <p>Cinque Terre <br> dasdawadadasda</p>
+			</div>	
+			<div class="cs-polaroid">
+			  <img src="assets/images/crashing.jpeg" class="cs-allseriesImg" alt="5 Terre" >
+			<h6>RETURNS JANUARY 20 AT 10 PM</h6>
+			  <div class="cs-container-info">
+			  <p class="cs-info"><h3>Crashing</h3>Pete Holmes returns — and is joined by plenty of fan favorite guest stars — in a new season of the authentic comedy.</p><a href=""><h5 class="cs-fom"> FIND OUT MORE &nbsp<i class="fa fa-chevron-right"></i></h5></a>
 			  </div>
-			</div>
-			<div class="polaroid">
-			  <img src="assets/images/twd.jpg" alt="5 Terre" style="width:100%">
-			  <div class="container">
-			  <p>Cinque Terre <br> dasdawadadasda</p>
+			</div>	
+						<div class="cs-polaroid">
+			  <img src="assets/images/highmain.jpeg" class="cs-allseriesImg" alt="5 Terre" >
+			<h6>RETURNS JANUARY 20 AT 10:30 PM</h6>
+			  <div class="cs-container-info">
+			  <p class="cs-info"><h3>High Maintenance</h3>The guy and his eccentric New York City clientele are back in a new season of what IndieWire calls “TV’s most human show.”</p><a href=""><h5 class="cs-fom"> FIND OUT MORE &nbsp<i class="fa fa-chevron-right"></i></h5></a>
 			  </div>
-			</div>
-			<div class="polaroid">
-			  <img src="assets/images/twd.jpg" alt="5 Terre" style="width:100%">
-			  <div class="container">
-			  <p>Cinque Terre <br> dasdawadadasda</p>
-			  </div>
-			</div>			
+			</div>										
 		</div>
 
+		
+	<div class="footer">
+
+		<div class="text-container"> <br><h1> MauTv</h1>Watch Your Favorite Series Online <br><br>Copyright <i class="fa fa-copyright"></i></div>
+
+	</div>
+		
+
 </body>
-</html>
+</html> 	
